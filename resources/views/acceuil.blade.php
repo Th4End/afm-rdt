@@ -41,7 +41,7 @@
             <ul class="navbar-nav">
                 @auth <!-- Vérifie si l'utilisateur est connecté -->
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('profile.edit') }}">{{ Auth::user()->role }}</a>
+                    <a class="nav-link" href="{{ route('profile.edit') }}">{{ Auth::user()->name }}</a>
                 </li>
                 <li class="nav-item">
                     <form method="POST" action="{{ route('logout') }}">
